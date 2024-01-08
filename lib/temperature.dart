@@ -168,6 +168,27 @@ class _TemperaturePageState extends State<TemperaturePage>
       body: Container(
         child: ListView(
           children: [
+            CircularPercentIndicator(
+              radius: 100,
+              lineWidth: 14,
+              percent: 0.29,
+              progressColor: Colors.indigo,
+              center: const Text(
+                '29\u00B0',
+                style: TextStyle(
+                  fontSize: 32,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ),
+            const SizedBox(height: 24),
+            const Center(
+              child: Text(
+                'TODAY',
+                style: TextStyle(
+                    fontWeight: FontWeight.bold, color: Colors.black54),
+              ),
+            ),
             Padding(
               padding: const EdgeInsets.only(top: 30, left: 25),
               child: Column(

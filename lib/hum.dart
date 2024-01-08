@@ -171,48 +171,27 @@ class _CharttempState extends State<Charttemp>
         padding: EdgeInsets.only(left: 20, right: 20),
         child: ListView(
           children: [
-            // Card(
-            //   elevation: 30,
-            //   shadowColor: Color.fromARGB(255, 192, 9, 9),
-            //   shape: RoundedRectangleBorder(
-            //       borderRadius: BorderRadius.circular(25.0)),
-            //   child: Column(
-            //     children: [
-            //       SizedBox(
-            //         height: 200,
-            //         child: Row(
-            //           children: [
-            //             Container(
-            //                 // color: Colors.black,
-            //                 margin: EdgeInsets.only(left: 5),
-            //                 child: RotatedBox(
-            //                     quarterTurns:
-            //                         -1, // Mengatur jumlah putaran (90 derajat)
-            //                     child: Text(
-            //                       '% Kelembapan',
-            //                       style: TextStyle(fontSize: 15),
-            //                     ))),
-            //             Container(
-            //               // color: Colors.black,
-            //               child: SizedBox(
-            //                 height: 200,
-            //                 width: 318,
-            //                 child: LineChartWidget(suhuChart),
-            //               ),
-            //             ),
-            //           ],
-            //         ),
-            //       ),
-            //       Container(
-            //           // color: Colors.black,
-            //           margin: EdgeInsets.only(bottom: 5),
-            //           child: Text(
-            //             'Waktu',
-            //             style: TextStyle(fontSize: 15),
-            //           )),
-            //     ],
-            //   ),
-            // ),
+            CircularPercentIndicator(
+              radius: 100,
+              lineWidth: 14,
+              percent: 0.75,
+              progressColor: Colors.indigo,
+              center: const Text(
+                '75\u00B0',
+                style: TextStyle(
+                  fontSize: 32,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ),
+            const SizedBox(height: 24),
+            const Center(
+              child: Text(
+                'TODAY',
+                style: TextStyle(
+                    fontWeight: FontWeight.bold, color: Colors.black54),
+              ),
+            ),
             Padding(
               padding: const EdgeInsets.only(top: 30),
               child: Column(
@@ -368,7 +347,7 @@ class _CharttempState extends State<Charttemp>
                                           padding: const EdgeInsets.only(
                                               top: 30, left: 25),
                                           child: Text(
-                                            '${minhumList[0].minHum}°',
+                                            '${minhumList[0].minHum}',
                                             style: TextStyle(
                                                 fontSize: 30,
                                                 color: Color.fromARGB(
@@ -432,7 +411,7 @@ class _CharttempState extends State<Charttemp>
                                           padding: const EdgeInsets.only(
                                               top: 30, left: 25),
                                           child: Text(
-                                            '${suhumaksList[0].maksHum}°',
+                                            '${suhumaksList[0].maksHum}',
                                             style: TextStyle(
                                                 fontSize: 30,
                                                 color: Color.fromARGB(

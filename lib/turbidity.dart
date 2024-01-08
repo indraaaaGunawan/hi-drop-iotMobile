@@ -156,6 +156,27 @@ class _TurbidityPageState extends State<TurbidityPage> {
       body: Container(
         child: ListView(
           children: [
+            CircularPercentIndicator(
+              radius: 100,
+              lineWidth: 14,
+              percent: 0.35,
+              progressColor: Colors.indigo,
+              center: const Text(
+                '2.35\u00B0',
+                style: TextStyle(
+                  fontSize: 32,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ),
+            const SizedBox(height: 24),
+            const Center(
+              child: Text(
+                'TODAY',
+                style: TextStyle(
+                    fontWeight: FontWeight.bold, color: Colors.black54),
+              ),
+            ),
             Padding(
               padding: const EdgeInsets.only(top: 30, left: 25),
               child: Column(
