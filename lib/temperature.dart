@@ -172,7 +172,7 @@ class _TemperaturePageState extends State<TemperaturePage>
               radius: 100,
               lineWidth: 14,
               percent: 0.29,
-              progressColor: Colors.indigo,
+              progressColor: const Color.fromARGB(255, 18, 43, 185),
               center: const Text(
                 '29\u00B0',
                 style: TextStyle(
@@ -186,7 +186,8 @@ class _TemperaturePageState extends State<TemperaturePage>
               child: Text(
                 'TODAY',
                 style: TextStyle(
-                    fontWeight: FontWeight.bold, color: Colors.black54),
+                    fontWeight: FontWeight.bold,
+                    color: Color.fromARGB(234, 0, 0, 0)),
               ),
             ),
             Padding(
@@ -239,7 +240,7 @@ class _TemperaturePageState extends State<TemperaturePage>
                                           padding: const EdgeInsets.only(
                                               top: 30, left: 25),
                                           child: Text(
-                                            '${ratatempList[0].rataTemp}%',
+                                            '${ratatempList[0].rataTemp}°',
                                             style: TextStyle(
                                                 fontSize: 30,
                                                 color: Color.fromARGB(
@@ -290,7 +291,7 @@ class _TemperaturePageState extends State<TemperaturePage>
                                 padding:
                                     const EdgeInsets.only(top: 30, left: 25),
                                 child: Text(
-                                  '$temperature %',
+                                  '$temperature°',
                                   style: TextStyle(
                                       fontSize: 30, color: Colors.green[500]),
                                 ),

@@ -160,9 +160,9 @@ class _TurbidityPageState extends State<TurbidityPage> {
               radius: 100,
               lineWidth: 14,
               percent: 0.35,
-              progressColor: Colors.indigo,
+              progressColor: const Color.fromARGB(255, 18, 43, 185),
               center: const Text(
-                '2.35\u00B0',
+                '2.35',
                 style: TextStyle(
                   fontSize: 32,
                   fontWeight: FontWeight.bold,
@@ -174,7 +174,8 @@ class _TurbidityPageState extends State<TurbidityPage> {
               child: Text(
                 'TODAY',
                 style: TextStyle(
-                    fontWeight: FontWeight.bold, color: Colors.black54),
+                    fontWeight: FontWeight.bold,
+                    color: Color.fromARGB(234, 0, 0, 0)),
               ),
             ),
             Padding(
@@ -214,7 +215,7 @@ class _TurbidityPageState extends State<TurbidityPage> {
                                 padding:
                                     const EdgeInsets.only(top: 30, left: 25),
                                 child: Text(
-                                  '$turbidity %',
+                                  '$turbidity',
                                   style: TextStyle(
                                       fontSize: 30, color: Colors.green[500]),
                                 ),
@@ -313,7 +314,7 @@ class _TurbidityPageState extends State<TurbidityPage> {
                                           padding: const EdgeInsets.only(
                                               top: 30, left: 25),
                                           child: Text(
-                                            '${ratantuList[0].rataNtu}%',
+                                            '${ratantuList[0].rataNtu}',
                                             style: TextStyle(
                                                 fontSize: 30,
                                                 color: Color.fromARGB(
@@ -349,7 +350,7 @@ class _TurbidityPageState extends State<TurbidityPage> {
                                   child: Text(
                                     "AVG-Ket-NTU",
                                     style: TextStyle(
-                                      fontSize: 15,
+                                      fontSize: 20,
                                     ),
                                   ),
                                 ),
@@ -358,7 +359,7 @@ class _TurbidityPageState extends State<TurbidityPage> {
                                   child: Text(
                                     "Minggu ini",
                                     style: TextStyle(
-                                      fontSize: 10,
+                                      fontSize: 15,
                                     ),
                                   ),
                                 ),
@@ -377,7 +378,7 @@ class _TurbidityPageState extends State<TurbidityPage> {
                                           padding: const EdgeInsets.only(
                                               top: 30, left: 25),
                                           child: Text(
-                                            '${ratantuList[0].rataKetNtu}%',
+                                            '${ratantuList[0].rataKetNtu}',
                                             style: TextStyle(
                                                 fontSize: 30,
                                                 color: Color.fromARGB(

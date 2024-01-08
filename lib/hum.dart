@@ -175,9 +175,9 @@ class _CharttempState extends State<Charttemp>
               radius: 100,
               lineWidth: 14,
               percent: 0.75,
-              progressColor: Colors.indigo,
+              progressColor: const Color.fromARGB(255, 18, 43, 185),
               center: const Text(
-                '75\u00B0',
+                '75\%',
                 style: TextStyle(
                   fontSize: 32,
                   fontWeight: FontWeight.bold,
@@ -189,7 +189,8 @@ class _CharttempState extends State<Charttemp>
               child: Text(
                 'TODAY',
                 style: TextStyle(
-                    fontWeight: FontWeight.bold, color: Colors.black54),
+                    fontWeight: FontWeight.bold,
+                    color: Color.fromARGB(234, 0, 0, 0)),
               ),
             ),
             Padding(
@@ -282,7 +283,7 @@ class _CharttempState extends State<Charttemp>
                                           padding: const EdgeInsets.only(
                                               top: 30, left: 25),
                                           child: Text(
-                                            '${ratamaksList[0].rataHum}%',
+                                            '${ratamaksList[0].rataHum}',
                                             style: TextStyle(
                                                 fontSize: 30,
                                                 color: Color.fromARGB(
