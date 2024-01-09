@@ -162,7 +162,7 @@ class _TurbidityPageState extends State<TurbidityPage> {
               percent: 0.35,
               progressColor: const Color.fromARGB(255, 18, 43, 185),
               center: const Text(
-                '2.35',
+                '2.35\Ntu',
                 style: TextStyle(
                   fontSize: 32,
                   fontWeight: FontWeight.bold,
